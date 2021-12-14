@@ -26,6 +26,10 @@ Route::get('/sign_in', function () {
     return view('signIn');
 });
 Route::post("/signIn", [UserController::class, 'signIn']);
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('sign_in');
+});
 
 Route::get('/add-product', function () {
     return view('product/add_product');
