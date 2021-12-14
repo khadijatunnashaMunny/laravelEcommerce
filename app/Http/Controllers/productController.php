@@ -51,4 +51,9 @@ class productController extends Controller
         //     ->get();
         // return view('product/search', ['product' => $product]);
     }
+    static function cartItem()
+    {
+        $userId = Session::get('user')['id'];
+        return cart::where('user_id', $userId)->count();
+    }
 }

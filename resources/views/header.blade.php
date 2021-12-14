@@ -1,3 +1,13 @@
+<?php
+
+use App\Http\Controllers\productController;
+
+$total = 0;
+if (Session::has('user')) {
+    $total = productController::cartItem();
+}
+
+?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -23,7 +33,10 @@
                 </div>
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/cartlist">cart({{$total}})</a></li>
 
+            </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
