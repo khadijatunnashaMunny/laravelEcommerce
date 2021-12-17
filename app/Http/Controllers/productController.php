@@ -15,18 +15,24 @@ class productController extends Controller
     //
     public function product(Request $request)
     {
-
+        $product = new product;
         $product['productId'] = $request->productId;
         $product['productName'] = $request->productName;
         $product['productPrice'] = $request->productPrice;
-
-        $INS = DB::table('products')->insert($product);
-        return Redirect()->back();
+        if ($request->hasfile('productImage')) {
+            $file = $request->file('productImage');
+            $extention = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extention;
+            $file->move('uploads/images/', $filename);
+            $product->productImage = $filename;
+        }
+        $product->save();
+        return redirect()->back()->with('status', 'product Image Added Successfully');
     }
     public function get_product()
     {
         $product = DB::table('products')->get();
-        return view('product/show_product')->with('product', $product);
+        return view('home')->with('product', $product);
     }
     public  function detail($id)
     {

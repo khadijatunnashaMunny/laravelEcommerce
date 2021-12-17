@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-sm-6">
             <h2>Product detail</h2>
-
+            <img src="{{ asset('uploads/images/'.$product['productImage']) }}" width="250px" height="250px" alt="Image">
             <h2>{{$product['productId']}}</h2>
             <h2>{{$product['productName']}}</h2>
             <h2>{{$product['productPrice']}}</h2>

@@ -420,18 +420,7 @@
             @endauth
         </div>
         @endif -->
-    <div class="container">
-        <h2 class="heading">
-            Ecommerce
-        </h2>
-        <h5>
-            Create an online store with the leading eCommerce platform Sell online
-            with a professional online store. Launch, run and scale your online
-            store with our industry-leading eCommerce website builder and advanced
-            business features.
-        </h5>
 
-    </div>
 
 
 </body>
