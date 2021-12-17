@@ -40,6 +40,9 @@ Route::get("/detail/{id}", [ProductController::class, 'detail']);
 Route::post('/add_to_cart', [productController::class, 'add_to_cart']);
 Route::get("cartlist", [ProductController::class, 'cartList']);
 Route::get("removecart/{id}", [ProductController::class, 'removeCart']);
+Route::get("orderPage", [ProductController::class, 'orderPage']);
+Route::post("orderplace", [ProductController::class, 'orderPlace']);
+Route::get("myorders", [ProductController::class, 'myOrders']);
 
 Route::get("/search", [ProductController::class, 'search']);
 
