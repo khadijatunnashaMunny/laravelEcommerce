@@ -7,11 +7,14 @@
     <div class="col-sm-4">
         <div class="trending-wrapper">
             <h4>Result for Products</h4>
-            @foreach ($product as $item)
-            <div class="productDiv">
-                <div>
-                    <h3>{{$item->productName}}</h3>
-                </div>
+            @foreach($products as $item)
+            <div class="searched-item">
+                <a href="detail/{{$item['productId']}}">
+                    <div class="">
+                        <h2>{{$item['productName']}}</h2>
+                        <h5>{{$item['productPrice']}}</h5>
+                    </div>
+                </a>
             </div>
             @endforeach
         </div>

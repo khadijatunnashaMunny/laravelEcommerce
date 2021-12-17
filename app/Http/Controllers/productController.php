@@ -46,11 +46,12 @@ class productController extends Controller
             return redirect('/sign_in');
         }
     }
+
     public function search(Request $request)
     {
-        // $product = product::where('productName', 'like', '%' . $request->input('query') . '%')
-        //     ->get();
-        // return view('product/search', ['product' => $product]);
+        $product = product::where('productName', 'like', '%' . $request->input('query') . '%')
+            ->get();
+        return view('product/search', ['products' => $product]);
     }
     static function cartItem()
     {
@@ -109,6 +110,6 @@ class productController extends Controller
             ->where('orders.user_id', $userId)
             ->get();
 
-        return view('myorders', ['orders' => $orders]);
+        return view('product/myorders', ['orders' => $orders]);
     }
 }
