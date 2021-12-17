@@ -38,6 +38,9 @@ Route::post('admin/product', [productController::class, 'product']);
 Route::get('/get_product', [productController::class, 'get_product']);
 Route::get("/detail/{id}", [ProductController::class, 'detail']);
 Route::post('/add_to_cart', [productController::class, 'add_to_cart']);
+Route::get("cartlist", [ProductController::class, 'cartList']);
+Route::get("removecart/{id}", [ProductController::class, 'removeCart']);
+
 Route::get("/search", [ProductController::class, 'search']);
 
 
