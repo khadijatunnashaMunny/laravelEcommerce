@@ -34,20 +34,14 @@
                                             </div>
                                             <img href=" /detail/{{$item->id}}" height="350px" width="270px" src="{{ asset('uploads/images/'.$item->productImage) }}" alt="">
                                             <div class="actions-btn">
-                                                <a href="#"><i class="mdi mdi-cart"></i></a>
+                                                <a href="/detail/{{$item->id}}"><i class="mdi mdi-cart"></i></a>
+                                                <a href="/detail/{{$item->id}}"><i class="mdi mdi-eye"></i></a>
                                                 <a href="/detail/{{$item->id}}"><i class="mdi mdi-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="product-dsc">
-                                            <p><a href="#">men’s Black t-shirt</a></p>
-                                            <div class="ratting">
-                                                <i class="mdi mdi-star"></i>
-                                                <i class="mdi mdi-star"></i>
-                                                <i class="mdi mdi-star"></i>
-                                                <i class="mdi mdi-star-half"></i>
-                                                <i class="mdi mdi-star-outline"></i>
-                                            </div>
-                                            <span>$65.20</span>
+                                            <p><a href="#">{{$item->productName}}</a></p>
+                                            <span>${{$item->productPrice}}</span>
                                         </div>
                                     </div>
                                 </div>

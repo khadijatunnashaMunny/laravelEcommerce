@@ -53,7 +53,6 @@
     @yield('content')
     {{View::make('footer')}}
 
-
     <script src="js/vendor/jquery-1.12.3.min.js"></script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.min.js"></script>

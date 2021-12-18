@@ -6,7 +6,6 @@ $total = 0;
 if (Session::has('user')) {
     $total = productController::cartItem();
 }
-
 ?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -24,7 +23,7 @@ if (Session::has('user')) {
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="myorders">Orders</a></li>
+                <li><a href="orders">Orders</a></li>
             </ul>
             <form action="/search" class="navbar-form navbar-left">
                 <div class="form-group">
@@ -35,13 +34,8 @@ if (Session::has('user')) {
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/cartlist">cart({{$total}})</a></li>
                 @if(Session::has('user'))
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/logout">Logout</a></li>
-                    </ul>
-                </li>
+                <li><a href="/logout">Logout({{Session::get('user')['name']}})</a></li>
+
                 @else
                 <li><a href="/sign_in">Login</a></li>
                 <li><a href="/sign_up">Registration</a></li>

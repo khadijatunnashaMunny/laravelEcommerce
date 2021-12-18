@@ -87,14 +87,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="order-address bill padding60">
-          <div class="log-title">
-            <h3><strong>Billing address</strong></h3>
-          </div>
-          <p>Flat no 01, House no 02, Vincent, Dhaka-1207, Bangladesh</p>
-          <p>Phone: (+880) 19453 821758,</p>
-          <p>Email: info@companyname.com</p>
-        </div>
+
         <div class="order-details padding60">
           <div class="log-title">
             <h3><strong>customer details</strong></h3>

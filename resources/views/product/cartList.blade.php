@@ -36,7 +36,7 @@
                         <tbody>
                             <tr>
 
-                                <td class="td-img text-left">
+                                <td class="">
                                     <div>
                                         <img src="{{ asset('uploads/images/'.$item->productImage) }}" width="150px" height="150px" alt="Image">
                                     </div>

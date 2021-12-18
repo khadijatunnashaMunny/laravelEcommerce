@@ -1,30 +1,69 @@
 @extends('master')
 @section("content")
-<div class="custom-product">
-    <div class="col-sm-10">
-        <div class="trending-wrapper">
-            <h4>my orders </h4>
-            @foreach($orders as $item)
-            <div class=" row searched-item cart-list-devider">
-                <div class="col-sm-3">
-                    <a href="detail/{{$item->productId}}">
-                    </a>
+<div class="pages-title section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="pages-title-text text-center">
+                    <h2>MY ORDERS</h2>
+                    <ul class="text-left">
+                        <li><a href="/">Home </a></li>
+                        <li><span> // </span>Cart</li>
+                    </ul>
                 </div>
-                <div class="col-sm-4">
-                    <div class="">
-                        <h2>Name : {{$item->productName}}</h2>
-                        <h5>Delivery Status : {{$item->status}}</h5>
-                        <h5>Address : {{$item->address}}</h5>
-                        <h5>Payment Status : {{$item->payment_status}}</h5>
-                        <h5>Payment Method : {{$item->payment_method}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cart content section start -->
+<section class="pages cart-page section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-responsive padding60">
+                    <table class="wishlist-table text-center">
 
-                    </div>
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Delivery Status </th>
+                                <th>Address </th>
+                                <th>Payment Status </th>
+                            </tr>
+                        </thead>
+                        @foreach($orders as $item)
+                        <tbody>
+                            <tr>
+
+                                <td class="">
+                                    <h4>{{$item->productName}}</h4>
+
+                                </td>
+                                <td>
+                                    <h5>{{$item->status}}</h5>
+                                </td>
+                                <td>
+                                    <h5>{{$item->address}}</h5>
+                                </td>
+                                <td>
+                                    <strong>
+                                        <h5>{{$item->payment_status}}</h5>
+                                    </strong>
+                                </td>
+
+
+
+
+                            </tr>
+                        </tbody>
+                        @endforeach
+                    </table>
                 </div>
 
             </div>
-            @endforeach
         </div>
-
     </div>
-</div>
+</section>
+
+
 @endsection

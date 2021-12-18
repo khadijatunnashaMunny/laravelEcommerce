@@ -29,5 +29,5 @@ Route::get("/cartlist", [ProductController::class, 'cartList']);
 Route::get("/removecart/{id}", [ProductController::class, 'removeCart']);
 Route::get("/orderPage", [ProductController::class, 'orderPage']);
 Route::post("/orderplace", [ProductController::class, 'orderPlace']);
-Route::get("/yorders", [ProductController::class, 'myOrders']);
+Route::get("/orders", [ProductController::class, 'myOrders']);
 Route::get("/search", [ProductController::class, 'search']);

@@ -19,6 +19,8 @@ class productController extends Controller
         $product['productId'] = $request->productId;
         $product['productName'] = $request->productName;
         $product['productPrice'] = $request->productPrice;
+        $product['productDes'] = $request->productDes;
+
         if ($request->hasfile('productImage')) {
             $file = $request->file('productImage');
             $extention = $file->getClientOriginalExtension();
@@ -99,7 +101,6 @@ class productController extends Controller
             $order->product_id = $cart['product_id'];
             $order->user_id = $cart['user_id'];
             $order->status = "pending";
-            $order->payment_method = $req->payment;
             $order->payment_status = "pending";
             $order->address = $req->address;
             $order->save();
