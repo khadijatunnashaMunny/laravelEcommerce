@@ -20,6 +20,7 @@ Route::get('/logout', function () {
 Route::get('/add-product', function () {
     return view('product/add_product');
 });
+
 Route::get('/', [productController::class, 'get_product']);
 Route::post('admin/product', [productController::class, 'product']);
 Route::get("/detail/{id}", [ProductController::class, 'detail']);

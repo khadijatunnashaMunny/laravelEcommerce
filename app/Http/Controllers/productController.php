@@ -37,7 +37,7 @@ class productController extends Controller
     public  function detail($id)
     {
         $product = product::find($id);
-        return view('product/detail')->with('product', $product);
+        return view('product/productDetail')->with('product', $product);
     }
     public function add_to_cart(Request $request)
     {

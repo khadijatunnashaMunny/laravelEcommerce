@@ -1,56 +1,65 @@
 @extends('master')
 @section("content")
-
-
-<div class="container">
-
-    <h2 class="heading">
-        Ecommerce
-    </h2>
-    <h5 class="heading">
-        Create an online store with the leading eCommerce platform Sell online
-        with a professional online store. Launch, run and scale your online
-        store with our industry-leading eCommerce website builder and advanced
-        business features.
-    </h5>
-    <div class="p-4">
-        <h3>The simple way to tackle the complexity of selling online</h3>
-        <div class="row p-4">
-            <div class="col-md-4 p-4">
-                <p>Start a trial</p>
-                <p>Build a store that caters to your unique business needs—with the design tools, features, and support to get you up and running.</p>
-            </div>
-            <div class="col-md-4">
-                <p>Launch your store</p>
-                <p>Design and customize a beautiful storefront with powerful features and expert ecommerce support along the way.</p>
-            </div>
-            <div class="col-md-4">
-                <p>Grow your business</p>
-                <p>Build your brand with a storefront designed to jumpstart growth, from your very first sale onward.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="trending-wrapper">
-        <h3>Tredning Products</h3>
-        @foreach($product as $item)
-        <div class="trening-item">
-            <a href="/detail/{{$item->id}}">
-                <div class="">
-                    <img src="{{ asset('uploads/images/'.$item->productImage) }}" width="150px" height="150px" alt="Image">
-                    <h3>{{$item->productName}}</h3>
+<div class="container-fluid">
+    <div class="pages-title section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="pages-title-text text-center">
+                        <h2>Shop</h2>
+                        <ul class="text-left">
+                            <li><a href="/">Home </a></li>
+                            <li><span> // </span>Shop</li>
+                        </ul>
+                    </div>
                 </div>
-            </a>
+            </div>
         </div>
-        @endforeach
     </div>
+    <!-- shop section end -->
 
+    <div class="pages products-page section-padding text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="right-products">
+                        <div class="row">
+                            @foreach($product as $item)
+                            <div class="grid-content">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <div class="single-product">
+                                        <div class="product-img">
+                                            <div class="pro-type">
+                                                <span>new</span>
+                                            </div>
+                                            <img href=" /detail/{{$item->id}}" height="350px" width="270px" src="{{ asset('uploads/images/'.$item->productImage) }}" alt="">
+                                            <div class="actions-btn">
+                                                <a href="#"><i class="mdi mdi-cart"></i></a>
+                                                <a href="/detail/{{$item->id}}"><i class="mdi mdi-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-dsc">
+                                            <p><a href="#">men’s Black t-shirt</a></p>
+                                            <div class="ratting">
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star"></i>
+                                                <i class="mdi mdi-star-half"></i>
+                                                <i class="mdi mdi-star-outline"></i>
+                                            </div>
+                                            <span>$65.20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
-<style>
-    .heading {
-        text-align: center;
-    }
-</style>
-
 @endsection

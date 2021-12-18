@@ -1,6 +1,21 @@
 @extends('master')
 @section("content")
 <div class="container">
+    <div class="pages-title section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="pages-title-text text-center">
+                        <h2>Shop</h2>
+                        <ul class="text-left">
+                            <li><a href="/">Home </a></li>
+                            <li><span> // </span>Shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-6">
             <h2>Product detail</h2>
