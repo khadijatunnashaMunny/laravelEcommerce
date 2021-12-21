@@ -29,7 +29,7 @@ class productController extends Controller
             $product->productImage = $filename;
         }
         $product->save();
-        return redirect()->back()->with('status', 'product Image Added Successfully');
+        return redirect()->back();
     }
     public function get_product()
     {

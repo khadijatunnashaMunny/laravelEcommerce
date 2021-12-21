@@ -26,7 +26,7 @@
                         <h3><strong>registered customers</strong></h3>
 
                         <p>If you have an account with us, Please log in!</p>
-                        <form action="admin/product" method="POST" enctype="multipart/form-data">
+                        <form action="/product" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 @csrf
                                 <label for="exampleInputEmail1">product Id</label>

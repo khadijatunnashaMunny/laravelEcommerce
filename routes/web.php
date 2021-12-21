@@ -17,12 +17,9 @@ Route::get('/logout', function () {
     Session::forget('user');
     return redirect('sign_in');
 });
-Route::get('/add-product', function () {
-    return view('product/add_product');
-});
+
 
 Route::get('/', [productController::class, 'get_product']);
-Route::post('admin/product', [productController::class, 'product']);
 Route::get("/detail/{id}", [ProductController::class, 'detail']);
 Route::post('/add_to_cart', [productController::class, 'add_to_cart']);
 Route::get("/cartlist", [ProductController::class, 'cartList']);
@@ -31,3 +28,8 @@ Route::get("/orderPage", [ProductController::class, 'orderPage']);
 Route::post("/orderplace", [ProductController::class, 'orderPlace']);
 Route::get("/orders", [ProductController::class, 'myOrders']);
 Route::get("/search", [ProductController::class, 'search']);
+
+Route::get('/add-product', function () {
+    return view('product/add_product');
+});
+Route::post('/product', [productController::class, 'product']);
