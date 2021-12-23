@@ -28,8 +28,4 @@ Route::get("/orderPage", [ProductController::class, 'orderPage']);
 Route::post("/orderplace", [ProductController::class, 'orderPlace']);
 Route::get("/orders", [ProductController::class, 'myOrders']);
 Route::get("/search", [ProductController::class, 'search']);
-
-Route::get('/add-product', function () {
-    return view('product/add_product');
-});
-Route::post('/product', [productController::class, 'product']);
+Route::get("/about", [ProductController::class, 'about']);

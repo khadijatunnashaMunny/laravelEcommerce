@@ -1,32 +1,19 @@
-@extends('master')
-@section("content")
+@extends('multiauth::layouts.app')
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ ucfirst(config('multiauth.prefix')) }} Dashboard</div>
+                <div class="card-body">
+                    @include('multiauth::message')
+                    You are logged in to {{ config('multiauth.prefix') }} side!
 
-
-<!-- pages-title-start -->
-<div class="pages-title section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="pages-title-text text-center">
-                    <h2>Sign In</h2>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- pages-title-end -->
-<!-- login content section start -->
-<section class="pages login-page section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="main-input padding60">
                     <div class="log-title">
-                        <h3><strong>registered customers</strong></h3>
+                        <h3><strong>Add products</strong></h3>
 
                         <p>If you have an account with us, Please log in!</p>
-                        <form action="/product" method="POST" enctype="multipart/form-data">
+                        <form action="{{url('admin/product')}}" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 @csrf
                                 <label for="exampleInputEmail1">product Id</label>
@@ -53,11 +40,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</section>
-<!-- login content section end -->
-
-
+</div>
 @endsection

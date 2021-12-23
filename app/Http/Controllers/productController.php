@@ -119,4 +119,9 @@ class productController extends Controller
 
         return view('product/myorders', ['orders' => $orders]);
     }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

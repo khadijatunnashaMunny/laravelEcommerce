@@ -62,6 +62,8 @@
     <script src="js/jquery.meanmenu.js"></script>
     <!-- countdown JS -->
     <!-- nivo.slider JS -->
+    <script src="js/jquery.nivo.slider.pack.js"></script>
+
     <!-- simpleLens JS -->
     <script src="js/jquery.simpleLens.min.js"></script>
     <!-- jquery-ui js -->
