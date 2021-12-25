@@ -9,7 +9,6 @@
             <div class="col-xs-12">
                 <div class="pages-title-text text-center">
                     <h2>Sign In</h2>
-
                 </div>
             </div>
         </div>

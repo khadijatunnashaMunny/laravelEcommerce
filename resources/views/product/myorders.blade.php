@@ -8,7 +8,7 @@
                     <h2>MY ORDERS</h2>
                     <ul class="text-left">
                         <li><a href="/">Home </a></li>
-                        <li><span> // </span>Cart</li>
+                        <li><span> // </span>My Orders</li>
                     </ul>
                 </div>
             </div>

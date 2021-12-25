@@ -1,4 +1,4 @@
-@extends('master')
+@extends('blank')
 @section("content")
 <div class="container">
     <div class="pages-title section-padding">

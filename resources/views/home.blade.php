@@ -7,18 +7,20 @@
         <div id="wrapper">
             <div class="slider-wrapper">
                 <div id="mainSlider" class="nivoSlider">
-                    <img src="img/slider/home2/1.jpg" alt="main slider" title="#htmlcaption" />
-                    <img src="img/slider/home2/2.jpg" alt="main slider" title="#htmlcaption2" />
+                    <img src="images/yt.jpg" alt="main slider" title="#htmlcaption" />
+                    <img src="images/uy.jpg" alt="main slider" title="#htmlcaption2" />
+                    <img src="images/yi.jpg" alt="main slider" title="#htmlcaption3" />
+
                 </div>
                 <div id="htmlcaption" class="nivo-html-caption slider-caption">
                     <div class="container">
                         <div class="slider-left slider-right">
                             <div class="slide-text animated zoomInUp">
                                 <h3>new collection</h3>
-                                <h1>Men’s Fashion 2016</h1>
+                                <h1>Drone's collection</h1>
                             </div>
                             <div class="animated slider-btn fadeInUpBig">
-                                <a class="shop-btn" href="shop.html">Shop now</a>
+                                <a class="shop-btn" href="/">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -28,7 +30,7 @@
                         <div class="slider-left two-caption-text slider-right">
                             <div class="slide-text animated zoomInUp">
                                 <h3>new collection</h3>
-                                <h1>Men’s Fashion 2016</h1>
+                                <h1>Drone's collection</h1>
                                 <span>Starting at $65.00. Don’t miss out!</span>
                             </div>
                             <div class="one-p animated bounceInLeft">
@@ -49,10 +51,10 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="pages-title-text text-center">
-                        <h2>Shop</h2>
+                        <h2>Drone's collection</h2>
                         <ul class="text-left">
                             <li><a href="/">Home </a></li>
-                            <li><span> // </span>Shop</li>
+                            <li><span> // </span>Drone's collections</li>
                         </ul>
                     </div>
                 </div>
