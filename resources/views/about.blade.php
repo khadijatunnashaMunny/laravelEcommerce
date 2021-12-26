@@ -24,17 +24,32 @@
             <div class="main-padding section-padding-top clearfix">
                 <div class="col-sm-12 col-md-5">
                     <div class="about-img">
-                        <img src="img/about/l.jpg" alt="" />
+                        <img src="images/slider1.jpg" height="400px" width="400px" alt="" />
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="about-text">
                         <div class="about-author">
-                            <h4>An Multipurpose & Creative assembly of <br /> fashion store</h4>
+                            <h4>An Multipurpose & Creative assembly of <br />Electronic store</h4>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia is be deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit. voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <span>
+                            Create an online store with the leading eCommerce platform Sell online
+                            with a professional online store. Launch, run and scale your online
+                            store with our industry-leading eCommerce website builder and advanced
+                            business features.
+                        </span>
+                        <h4>Start a trial</h4>
+                        <span>
+                            Build a store that caters to your unique business needs—with the design tools, features, and support to get you up and running.
+                        </span>
+                        <h4>Launch your store</h4>
+                        <span>
+                            Design and customize a beautiful storefront with powerful features and expert ecommerce support along the way.
+                        </span>
+                        <h4>Grow your business</h4>
+                        <span>
+                            Build your brand with a storefront designed to jumpstart growth, from your very first sale onward.
+                        </span>
                     </div>
                 </div>
             </div>
@@ -56,7 +71,6 @@
                 <div class="section-title text-center">
                     <h3>Creator</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia is be deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit. voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
                 </div>
 
             </div>
@@ -64,11 +78,11 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="single-member">
                     <div class="member-img">
-                        <img src="img/slider/home2/1.jpg" alt="main slider" title="#htmlcaption" />
+                        <img src="images/me.jpg" alt="main slider" title="#htmlcaption" />
                     </div>
                     <div class="share-member">
                         <div class="member-title">
-                            <h4>Jonathan Edwards</h4>
+                            <h4>mustafizur rahman </h4>
                         </div>
                         <div class="member-btn">
                             <a href="#"><i class="mdi mdi-facebook"></i></a>

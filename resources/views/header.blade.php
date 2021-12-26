@@ -15,10 +15,10 @@ if (Session::has('user')) {
         <div class="row">
             <div class="col-sm-2">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo2.png" alt="Sellshop" /></a>
+                    <a href="/"><img src="img/logo2.png" alt="Sellshop" /></a>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="header-middel">
                     <div class="mainmenu">
                         <nav>
@@ -53,12 +53,32 @@ if (Session::has('user')) {
                                 </li>
                                 <li><a href="/orders">Orders</a>
                                 <li><a href="/about">About</a>
-                                <li><a href="/help">Help</a>
+                                <li><a href="/sign_in">Account</a>
+                                    <ul class="magamenu">
+                                        <li class="banner"><a href="/"><img src="img/logo2.png" alt="" /></a></li>
+
+                                        @if(Session::has('user'))
+                                        <li><a href="/logout">Logout({{Session::get('user')['name']}})</a></li>
+                                        @else
+                                        <li>
+                                            <h4>
+                                                <a href="/sign_in">Login</a>
+                                            </h4>
+
+                                        </li>
+                                        <li>
+                                            <h4>
+                                                <a href="/sign_up">Registration</a>
+                                            </h4>
+
+                                        </li>
+                                        @endif
+
+                                    </ul>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-
                     <!-- mobile menu start -->
                     <div class="mobile-menu-area">
                         <div class="mobile-menu">
@@ -67,34 +87,14 @@ if (Session::has('user')) {
                                     <li><a href="/">Home</a>
                                     <li><a href="/orders">Orders</a>
                                     <li><a href="/about">About</a>
-                                    <li><a href="/help">Help</a>
+                                    <li><a href="/sign_in">Account</a>
                                         <ul>
-                                            <li>
-                                                <h5>men’s wear</h5>
-                                                <ul>
-                                                    <li><a href="#">Shirts & Top</a></li>
-                                                    <li><a href="#">Shoes</a></li>
-                                                    <li><a href="#">Dresses</a></li>
-                                                    <li><a href="#">Shemwear</a></li>
-                                                    <li><a href="#">Jeans</a></li>
-                                                    <li><a href="#">Sweaters</a></li>
-                                                    <li><a href="#">Jacket</a></li>
-                                                    <li><a href="#">Men Watch</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <h5>women’s wear</h5>
-                                                <ul>
-                                                    <li><a href="#">Shirts & Tops</a></li>
-                                                    <li><a href="#">Shoes</a></li>
-                                                    <li><a href="#">Dresses</a></li>
-                                                    <li><a href="#">Shemwear</a></li>
-                                                    <li><a href="#">Jeans</a></li>
-                                                    <li><a href="#">Sweaters</a></li>
-                                                    <li><a href="#">Jacket</a></li>
-                                                    <li><a href="#">Women Watch</a></li>
-                                                </ul>
-                                            </li>
+                                            @if(Session::has('user'))
+                                            <li><a href="/logout">Logout({{Session::get('user')['name']}})</a></li>
+                                            @else
+                                            <li><a href="/sign_in">Login</a></li>
+                                            <li><a href="/sign_up">Registration</a></li>
+                                            @endif
                                         </ul>
                                     </li>
                                 </ul>
@@ -116,25 +116,13 @@ if (Session::has('user')) {
                     </div>
                 </div>
             </div>
-
             <div>
-                <div class="col-sm-3">
+                <div class="col-sm-1">
                     <div class="cart-itmes">
                         <a class="cart-itme-a" href="/cartlist">
                             <i class="mdi mdi-cart"></i>
-                            <strong>${{$total}}</strong>
+                            <strong>${{$total}} </strong>
                         </a>
-                    </div>
-                    <div class="cart-itmes">
-                        <ul class="nav navbar-nav navbar-right">
-                            @if(Session::has('user'))
-                            <li><a href="/logout">Logout({{Session::get('user')['name']}})</a></li>
-                            @else
-                            <li><a href="/sign_in">Login</a></li>
-                            <li><a href="/sign_up">Registration</a></li>
-                            @endif
-
-                        </ul>
                     </div>
                 </div>
             </div>

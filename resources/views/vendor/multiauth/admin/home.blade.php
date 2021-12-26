@@ -34,13 +34,20 @@
                                 <input type="file" name="productImage" class="form-control">
                             </div>
 
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="submit" class="btn btn-success">Submit</button>
                         </form>
 
                     </div>
+
+
                 </div>
+                <!-- cart content section start -->
+
             </div>
         </div>
     </div>
 </div>
+
+
+
 @endsection

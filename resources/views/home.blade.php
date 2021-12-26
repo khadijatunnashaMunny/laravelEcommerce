@@ -17,7 +17,7 @@
                         <div class="slider-left slider-right">
                             <div class="slide-text animated zoomInUp">
                                 <h3>new collection</h3>
-                                <h1>Drone's collection</h1>
+                                <h1>Camera's collection</h1>
                             </div>
                             <div class="animated slider-btn fadeInUpBig">
                                 <a class="shop-btn" href="/">Shop now</a>
@@ -51,10 +51,10 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="pages-title-text text-center">
-                        <h2>Drone's collection</h2>
+                        <h2>Collection</h2>
                         <ul class="text-left">
                             <li><a href="/">Home </a></li>
-                            <li><span> // </span>Drone's collections</li>
+                            <li><span> // </span>Collections</li>
                         </ul>
                     </div>
                 </div>
