@@ -4,7 +4,7 @@
     <div class="social-media section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <div class="social-icons">
                         <a href="#"><i class="mdi mdi-facebook"></i></a>
                         <a href="#"><i class="mdi mdi-twitter"></i></a>
@@ -13,14 +13,7 @@
                         <a href="#"><i class="mdi mdi-rss"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="newsletter">
-                        <form action="mail.php" method="post">
-                            <input type="text" name="email" placeholder="Enter your email..." />
-                            <input type="submit" value="subscribe" />
-                        </form>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

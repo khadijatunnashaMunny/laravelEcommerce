@@ -36,6 +36,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <a href="/admin_get_product">
+                            <li> admin_get_product</li>
+                        </a>
+
                         <a class="dropdown-item" href="/admin/logout" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}

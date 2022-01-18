@@ -79,7 +79,7 @@
                                             </div>
                                             <img href=" /detail/{{$item->id}}" height="350px" width="270px" src="{{ asset('uploads/images/'.$item->productImage) }}" alt="">
                                             <div class="actions-btn">
-                                                <a href="/detail/{{$item->id}}"><i class="mdi mdi-cart"></i></a>
+                                                <a href="/detail/{{$item->id}}"><i class="mdi mdi-eye"></i></a>
                                                 <a href="/detail/{{$item->id}}"><i class="mdi mdi-eye"></i></a>
                                                 <a href="/detail/{{$item->id}}"><i class="mdi mdi-eye"></i></a>
                                             </div>

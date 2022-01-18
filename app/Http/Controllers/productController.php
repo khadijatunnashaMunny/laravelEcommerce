@@ -124,4 +124,26 @@ class productController extends Controller
     {
         return view('about');
     }
+    public function admin_get_product()
+    {
+        $orders = DB::table('orders')
+            ->join('products', 'orders.product_id', '=', 'products.id')
+            ->get();
+
+        return view('product/adminproducts', ['orders' => $orders]);
+    }
+
+    public  function edit($id)
+    {
+        $product = DB::table('orders')->where('id', $id)->first();
+        return view('product/detailedit', compact('product'));
+    }
+    public function updatedetail(Request $req, $id)
+    {
+        $data = array();
+        $data['status'] = $req->status;
+        $data['payment_status'] = $req->payment_status;
+        $update = DB::table('orders')->where('id', $id)->update($data);
+        return redirect()->back();
+    }
 }

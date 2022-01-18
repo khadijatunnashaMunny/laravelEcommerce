@@ -29,3 +29,7 @@ Route::post("/orderplace", [ProductController::class, 'orderPlace']);
 Route::get("/orders", [ProductController::class, 'myOrders']);
 Route::get("/search", [ProductController::class, 'search']);
 Route::get("/about", [ProductController::class, 'about']);
+
+Route::get('/admin_get_product', [productController::class, 'admin_get_product']);
+Route::get("/edit/{id}", [ProductController::class, 'edit']);
+Route::post("/updatedetail/{id}", [ProductController::class, 'updatedetail']);
